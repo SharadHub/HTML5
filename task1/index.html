@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ariyana Tech Solutions</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: flex;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: #2c3e50;
+        padding: 20px;
+        color: #ecf0f1;
+        font-family: Arial, sans-serif;
+        overflow-y: auto;
+    }
+
+    .sidebar h2 {
+        color: #4a5568;
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+        padding: 15px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 2px solid #e2e8f0;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 12px 20px;
+        color: #ecf0f1;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .sidebar a:hover {
+        background-color: #34495e;
+        transform: translateX(5px);
+    }
+
+    details {
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    summary {
+        padding: 15px 20px;
+        cursor: pointer;
+        background: linear-gradient(135deg, #4299e1, #3182ce);
+        color: white;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        user-select: none;
+    }
+
+    summary:hover {
+        background: linear-gradient(135deg, #3182ce, #2c5282);
+    }
+
+    details[open] summary {
+        background: linear-gradient(135deg, #2c5282, #2a4365);
+    }
+
+    details details summary {
+        padding: 12px 30px;
+        font-size: 14px;
+        background: linear-gradient(135deg, #38b2ac, #319795);
+    }
+
+    details details summary:hover {
+        background: linear-gradient(135deg, #319795, #2c7a7b);
+    }
+
+    .content {
+        flex: 1;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        overflow: hidden;
+        background: white;
+    }
+
+    iframe {
+        width: 100%;
+        height: calc(100vh - 40px); /* Adjust for margin */
+        border: none;
+        border-radius: 15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+
+    <!-- Main Home link -->
+    <!-- <a href="home.html" target="mainFrame">Home</a> -->
+
+    <!-- Radiology Section -->
+    <details>
+        <summary>Radiology</summary>
+        <details>
+            <summary>CT Scan</summary>
+            <a href="ctscan-report.html" target="mainFrame">Report</a>
+            <a href="ctscan-film.html" target="mainFrame">Film</a>
+        </details>
+        <details>
+            <summary>X-Ray</summary>
+            <a href="xray-report.html" target="mainFrame">Report</a>
+            <a href="xray-film.html" target="mainFrame">Film</a>
+        </details>
+    </details>
+</div>
+
+<div class="content">
+    <iframe name="mainFrame" src="home.html"></iframe>
+</div>
+
+</body>
+</html> 

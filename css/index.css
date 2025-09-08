@@ -1,0 +1,37 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #f4f4f4;
+      padding: 15px;
+      height: 100vh;
+      position: fixed;
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .sidebar details {
+      margin: 6px 0;
+    }
+    .sidebar summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      padding-left: 15px;
+      text-decoration: none;
+      color: black;
+      margin: 4px 0;
+    }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+    }
